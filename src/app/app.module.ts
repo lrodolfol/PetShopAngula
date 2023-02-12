@@ -13,6 +13,7 @@ import { FramePageComponent } from './pages/master/frame.page';
 import { ProductCardComponent } from './componentes/account/store/product-card/product-card.component';
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoadingComponent } from './componentes/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductsPageComponent,
     CartPageComponent,
     FramePageComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
