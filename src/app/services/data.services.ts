@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable ({
+    // se nao tivesse esse toor, eu deveria injetar diretamente na classe que tem essa como injetavel 
+    //usando o root, ele fica ja disponivel dentro do app.module da raiz
     providedIn: 'root'
 })
 
