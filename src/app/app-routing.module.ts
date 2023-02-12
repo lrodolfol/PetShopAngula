@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginPageComponent } from './pages/account/login-page/login-page.component';
+import {LoginPageComponent} from './pages/account/login-page/login-page.component';
 import { PetsPageComponent } from './pages/account/pets-page/pets-page.component';
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';

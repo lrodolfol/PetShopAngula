@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
-import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
 import { PetsPageComponent } from './pages/account/pets-page/pets-page.component';
@@ -12,6 +11,8 @@ import { ProductsPageComponent } from './pages/account/store/products-page/produ
 import { CartPageComponent } from './pages/account/store/cart-page/cart-page.component';
 import { FramePageComponent } from './pages/master/frame.page';
 import { ProductCardComponent } from './componentes/account/store/product-card/product-card.component';
+import { LoginPageComponent } from './pages/account/login-page/login-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProductCardComponent } from './componentes/account/store/product-card/p
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

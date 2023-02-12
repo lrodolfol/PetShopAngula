@@ -13,9 +13,15 @@ import { Product } from '../models/product.model';
 //tipo o fromservices do aspnet
 
 export class DataService {
+    public url = 'http://localhost:3000/v1';
+
     constructor(private http: HttpClient) {}
 
-    getProducts() : Observable<any[]> {
-        return this.http.get<Product[]>('http://localhost:3000/v1/products');
+    getProducts() : Observable<Product[]> {
+        return this.http.get<Product[]>(`${this.url}/products`);
+    }
+
+    authenticate(data : any) {
+        return this.http.get<Product[]>(`${this.url}/account/authenticate`, data);
     }
 }
